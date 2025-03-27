@@ -13,6 +13,7 @@ This compose snippet can be used to deploy the container.
     container_name: kiwix-updater
     restart: always
     environment:
+      - SCRIPT_FLAGS=-d -u -w -c -S
       - TZ=Canada/Atlantic
     volumes:
       - /path/to/zim/files:/zim
