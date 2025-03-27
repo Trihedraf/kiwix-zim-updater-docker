@@ -1,9 +1,8 @@
 FROM alpine:latest
 
 # ENVIRONMENT
-ENV CRON_SCHEDULE="0 3 1 * *"
-ENV SCRIPT_FLAGS="-d -w -c -f"
-ENV TZ="Canada/Atlantic"
+ENV SCRIPT_FLAGS=-d -u -w -c -f
+ENV TZ=Canada/Atlantic
 
 # BASICS
 RUN apk update
