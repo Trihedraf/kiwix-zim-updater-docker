@@ -34,4 +34,4 @@ ADD crontab /
 #RUN crontab crontab
 
 # CMD
-CMD ["ping", "8.8.8.8"]
+CMD ["watch", "uname"]
