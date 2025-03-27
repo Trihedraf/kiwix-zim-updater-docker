@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:stable
 #FROM alpine:latest
 
 # ENVIRONMENT
@@ -15,7 +15,7 @@ ENV TZ="Canada/Atlantic"
 #RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update
-RUN apt-get -qq -y install git wget
+RUN apt-get -qq -y install git wget procps
 RUN apt-get clean && rm -rf /var/lib/apt/lists/\* /tmp/\* /var/tmp/*
 
 WORKDIR /app
