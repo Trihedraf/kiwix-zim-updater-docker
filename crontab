@@ -1,1 +1,1 @@
-*/5 * * * * /bin/bash /kiwix-zim-updater.sh $SCRIPT_FLAGS /zim
+0 3 1 * * /bin/bash /kiwix-zim-updater.sh $SCRIPT_FLAGS /zim
