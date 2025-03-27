@@ -18,7 +18,7 @@ RUN wget https://raw.githubusercontent.com/jojo2357/kiwix-zim-updater/main/kiwix
 RUN chmod +x /kiwix-zim-updater.sh
 
 # VOLUMES
-#VOLUME /zim
+VOLUME /zim
 
 # CRON
 ADD crontab /
