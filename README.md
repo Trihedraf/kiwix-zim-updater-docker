@@ -3,6 +3,8 @@ This container uses [this script by jojo2357](https://github.com/jojo2357/kiwix-
 
 It performs the check on the first day of every month as long as the container is running. 
 
+The script flags can be customized via environment variables to tweak the operation.
+
 ## Example Docker Compose
 
 This compose snippet can be used to deploy the container.
