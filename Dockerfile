@@ -31,7 +31,7 @@ RUN chmod +x /app/data/kiwix-zim-updater.sh
 
 # CRON
 ADD crontab /
-RUN crontab crontab
+#RUN crontab crontab
 
 # CMD
-CMD ["crond", "-f"]
+CMD ["ping", "8.8.8.8"]
