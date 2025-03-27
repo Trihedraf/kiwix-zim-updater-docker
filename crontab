@@ -1,1 +1,1 @@
-$CRON_SCHEDULE /bin/bash /user/bin/kiwix-zim-updater.sh $SCRIPT_FLAGS
+$CRON_SCHEDULE /bin/bash /kiwix-zim-updater.sh $SCRIPT_FLAGS
