@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 # ENVIRONMENT
-ENV SCRIPT_FLAGS -d -u -w -c -f
+ENV SCRIPT_FLAGS -d -u -w -c -S
 ENV TZ Canada/Atlantic
 
 # BASICS
