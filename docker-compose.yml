@@ -1,0 +1,12 @@
+services:
+  kiwix-updater:
+    image: kiwix-zim-updater
+    build:
+        dockerfile: Dockerfile
+    container_name: kiwix-updater
+    restart: always
+    environment:
+      - SCRIPT_FLAGS=-d -w -c -f
+      - TZ=America/Los_Angeles
+    volumes:
+      - /path/to/zim/files:/zim
