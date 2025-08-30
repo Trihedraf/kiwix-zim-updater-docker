@@ -1,1 +1,1 @@
-0 3 1 * * /bin/bash /kiwix-zim-updater.sh $SCRIPT_FLAGS /zim
+0 0 7 * * /bin/bash /app/kiwix-zim-updater.sh $SCRIPT_FLAGS /zim 2>&1 | tee -a /zim/logs/$(date +%F_%T).log
