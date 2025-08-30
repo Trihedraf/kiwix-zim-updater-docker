@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 # ENVIRONMENT
-ENV SCRIPT_FLAGS -d -u -w -c -S
+ENV SCRIPT_FLAGS -d -w -c -f
 ENV TZ America/Los_Angeles
 
 # BASICS
@@ -11,8 +11,8 @@ RUN apk add --no-cache bash coreutils grep tzdata wget
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # ADD SCRIPT
-RUN wget https://raw.githubusercontent.com/jojo2357/kiwix-zim-updater/main/kiwix-zim-updater.sh -O /kiwix-zim-updater.sh
-RUN chmod +x /kiwix-zim-updater.sh
+RUN git clone https://github.com/jojo2357/kiwix-zim-updater /app
+RUN chmod +x /app/kiwix-zim-updater.sh
 
 # VOLUMES
 VOLUME /zim
