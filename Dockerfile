@@ -2,7 +2,7 @@ FROM alpine:latest
 
 # ENVIRONMENT
 ENV SCRIPT_FLAGS -d -u -w -c -S
-ENV TZ Canada/Atlantic
+ENV TZ America/Los_Angeles
 
 # BASICS
 RUN apk add --no-cache bash coreutils grep tzdata wget
