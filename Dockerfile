@@ -5,9 +5,7 @@ ENV SCRIPT_FLAGS -d -u -w -c -S
 ENV TZ Canada/Atlantic
 
 # BASICS
-RUN apk update
-RUN apk upgrade
-RUN apk add --no-cache ca-certificates coreutils gnutls-utils curl wget grep bash tzdata
+RUN apk add --no-cache bash coreutils grep tzdata wget
 
 # TIMEZONE
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
